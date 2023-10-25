@@ -1,0 +1,29 @@
+
+   
+ 
+
+<h2>books are coming soon</h2>
+
+<h2> listing table </h2>
+
+
+ <table>
+  <thead>
+   <tr>
+    <th>book_id</th>
+    <th>book_name</th>
+    </tr> 
+   </thead>
+
+    <tbody>
+ 
+         <% @books.each do |book| %>
+         <tr>
+           <td><%=book.id%> </td>
+           <td><%=book.name%></td>
+             <td><%= link_to "Show",book%></td>
+             <td><%=link_to "update",edit_book_path(book)%>
+           
+         </tr>
+         <%end%>
+    </tbody>
