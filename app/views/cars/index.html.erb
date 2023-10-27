@@ -1,0 +1,14 @@
+<h1>i am on cars page </h1>
+<p>show cars details </p>
+
+<h2><%= link_to "create new car",new_car_path%></h2>
+    <h2> all cars name </h2>
+<%@cars.each do |car|%>
+  
+  <h4> <%= link_to car.name,car_path(car)%></h4>
+ 
+<%end%>
+
+
+
+

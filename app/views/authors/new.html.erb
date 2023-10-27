@@ -1,0 +1,24 @@
+<h2>create new author</h2>
+
+
+ 
+
+
+
+<%= form_for @author do |f| %>
+  <!-- Author fields -->
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <!-- Book fields -->
+  <%= f.fields_for :books do |book_fields| %>
+    <%= book_fields.label :name %>
+    <%= book_fields.text_field :name %>
+
+    <%= book_fields.label :price %>
+    <%= book_fields.text_field :price %>
+  <% end %>
+  <%= f.submit %>
+
+   
+<% end %>

@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  
-  resources :articals
-   root "articals#index"
+  # root 'cars#index'
+  # resources :cars
+  # resources :articals
+  #  root "articals#index"
   # get 'authors/index'
-  #  root "book#index"
-   
+  # root "person#index" 
+  # resources :person
+  
+  # root "book#index"
+  root "authors#index"
    resources :book
     resources :authors
 

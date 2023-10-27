@@ -1,4 +1,16 @@
 <h1>Authors#index</h1>
 <p>Find me in app/views/authors/index.html.erb</p>
 
+ <%= link_to "create",new_author_path %>
  
+  
+<%= form_with model: @person do |form|%>
+   
+<%= form.select :book_id, Book.order(:name).map { |city| [city.name, city.id]}%>
+<% end %>
+
+  
+ 
+
+
+   

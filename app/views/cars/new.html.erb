@@ -1,0 +1,20 @@
+ <h1>hii i  am  on create page</h1>
+
+<div>
+<%= form_with model: @car do |car|%>
+ 
+<%= car.label :name%>
+  <%= car.text_field :name %>
+  <%car.errors%>
+    </div>
+  <br>
+  <div>
+  <%=car.label :price%>
+  <%= car.text_field :price%>
+  </div>
+  <br>
+
+  <div>
+   <%= car.submit%>
+   </div>
+  <%end%>

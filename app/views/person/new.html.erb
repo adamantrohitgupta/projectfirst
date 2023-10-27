@@ -1,0 +1,21 @@
+<%= form_for @person do |f| %>
+  <!-- Author fields -->
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+ 
+   
+
+
+
+  <!-- Book fields -->
+    <%= f.fields_for :addresses do |book_fields| %> 
+    <%= book_fields.label :city%> 
+    <%= book_fields.text_field :city %> 
+    
+           
+    <%= book_fields.label :street %> 
+    <%= book_fields.text_field :street %> 
+     <% end %> 
+<%br %>
+  <%= f.submit %>
+<% end %>

@@ -27,3 +27,20 @@
          </tr>
          <%end%>
     </tbody>
+
+
+
+
+
+     <%# <%= form_with model: @book do |f| %>
+   
+   <%# <%= f.collection_radio_buttons :author_id, Author.order(:name), :id, :name %> %>
+<%# <% end %> %>
+
+ %>
+ 
+<%= form_with model: @book do |form| %>
+  <%= text_field_with_label form, :first_name %>
+  <%= text_field_with_label form, :id%>
+<% end %>
+ 
